@@ -14,7 +14,7 @@ This application consists of three tabs:
 * Second tab, enables user to add a new task to their list.
 * Third tab, again shows a list of the tasks and gives the user the option to delete each one.
 
-**Technologies**
+**Technologies:**
 
 * Ionic(v1) Framework (angularJS, HTML, CSS, etc).
 
@@ -22,7 +22,7 @@ This application consists of three tabs:
 
 1. Download and install the apk ("android-debug") onto a android device.
 
-**References** 
+**References:** 
 
 [Ionic](http://ionicframework.com/docs/v1/)
 
