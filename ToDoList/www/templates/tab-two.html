@@ -1,0 +1,21 @@
+<ion-view view-title="TO DO LIST" style="background-color:#1a0000;">
+<ion-content>   
+ <div class="card card-positive">
+  <div class="item item-text-wrap">
+   <h2 style="text-align:center; color:blue;"><b>ADD NEW TASK</b></h2>
+  </div>
+      </div>
+    <div class="list">
+      <label class="item item-input item-stacked-label" style="background-color:white;">
+        <span class="input-label"  style="color:blue;">Don't forget to:             </span> 
+        <input type="text" ng-model="data.newTask" placeholder="Enter a task here">       
+      </label> <!-- take in newTask(task)-->
+     <label class="item item-input item-stacked-label" style="background-color:white;">
+        <input type="text" ng-model="data.newDetail" placeholder="Enter a details here">       
+      </label> <!-- take in newDetails(details)-->
+    <button class="button icon-left ion-plus button-full button-energized" ng-click="addTask()">
+      Add
+    </button> <!-- if clicked add task and details and reset value in label to nothing-->
+    </div>
+  </ion-content>
+</ion-view>

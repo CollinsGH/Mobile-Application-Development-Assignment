@@ -1,0 +1,26 @@
+<ion-view view-title="TO DO LIST" style="background-color:#1a0000;">
+  <ion-content>
+        <div class="card card-positive">
+  <div class="item item-text-wrap">
+   <h2 style="text-align:center; color:blue;"><b>REMOVE TASK</b></h2>
+  </div>
+      </div>
+      <!-- Display tasks 
+            using ng-repeat 
+            as long as there is a task in tasks
+            - repeat-->
+    <ion-list>
+      <ion-item ng-repeat="task in data.tasks">
+          <div class="row responsive-sm">
+            <div class="col">
+        <h2 style="color:blue;font-size:110%;">{{ task.title }}</h2>
+          <br> <!-- display title-->
+          <h4 style="color:#ffcc00;">{{ task.added | date: 'yyyy-MM-dd HH:mm' }}</h4>
+              </div> <!-- display date-->
+              <div class="col.col">
+          <button class="button icon ion-trash-a button button-energized " ng-click="remove(task)"></button>
+              </div> <!-- if clicked remove task and call remove task function-->
+      </ion-item>
+    </ion-list>  
+  </ion-content>
+</ion-view>

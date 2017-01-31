@@ -1,0 +1,23 @@
+<ion-view view-title="TO DO LIST" style="background-color:#1a0000;">
+   <ion-content>
+       <div class="card card-positive">
+  <div class="item item-text-wrap">
+   <h2 style="text-align:center; color:blue;"><b>TASKS</b></h2>
+  </div>
+      </div>
+    <ion-list>
+      <ion-item ng-repeat="task in data.tasks"style="background-color:#1a0000;">
+          <div class="item item-checkbox"> <!-- check box for user to check quickly on the go -->
+              <label class="checkbox">
+                  <input type="checkbox">
+              </label>
+        <h2 style="color:blue;font-size:120%;">{{ task.title }}</h2>
+              <!-- display task title-->
+              <h4 style="color:blue;">{{ task.details }}</h4>
+          <br> <!-- display task detail-->
+          <h4 style="color:#ffcc00;">{{ task.added | date: 'yyyy-MM-dd HH:mm' }}</h4>
+            </div>  <!-- display date of task entry-->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
